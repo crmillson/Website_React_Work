@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.GMDB {
+  float: left;
+}
+
+.MuiButton-text {
+  color: white;
+  border-color: white;
+  float: left;
+}
+
+
