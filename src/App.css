@@ -39,12 +39,21 @@
 
 .GMDB {
   float: left;
+
 }
 
 .MuiButton-text {
   color: white;
   border-color: white;
   float: left;
+
+}
+
+.ButtonGroup {
+  float: left;
+  align-items: center;
+  padding-top: 50px;
+
 }
 
 

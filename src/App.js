@@ -25,7 +25,9 @@ function App() {
     <div className="App">
 
         <SearchAppBar multipleViewStatus={setMultipleView}/>
-        {multipleView ? <MovieList multipleViewStatus={setMultipleView} setSingleMovie={setSingleMovie} /> : <MovieDetails setSingleMovie={setSingleMovie} multipleViewStatus={setMultipleView} singleMovie={singleMovie}/>}
+        {multipleView ?
+            <MovieList multipleViewStatus={setMultipleView} setSingleMovie={setSingleMovie} /> :
+            <MovieDetails setSingleMovie={setSingleMovie} multipleViewStatus={setMultipleView} singleMovie={singleMovie}/>}
         {/*<MovieDetails />*/}
         {/*<MovieList singleView={singleView} setSingleView={setSingleView(true)} />*/}
         {/*<MovieList />*/}

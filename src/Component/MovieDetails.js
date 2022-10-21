@@ -17,7 +17,6 @@ export default function MovieDetails(props) {
     }, [])
 
 
-
 // Custom Method
     function fetchSingleMovie() {
         fetch(`http://localhost:3001/movies/${props.singleMovie.movieId}`)

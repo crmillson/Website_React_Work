@@ -69,7 +69,7 @@ const theme = createTheme({
 export default function SearchAppBar(props) {
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static">
+            <AppBar position="static" sx={{ background: 'black', height: 75}}>
                 <Toolbar>
                     <IconButton
                         size="large"
@@ -87,9 +87,9 @@ export default function SearchAppBar(props) {
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
                         <h1 className={"GMDB"}>GMDB</h1>
-                        <ButtonGroup variant="text"
+                        <ButtonGroup className={"ButtonGroup"} variant="text"
                         aria-label="outlined button group">
-                            <Button onClick={() => {props.multipleViewStatus(true)}}  sx={{ color: 'white', borderColor: 'white' }}>Home</Button>
+                            <Button onClick={() => {props.multipleViewStatus(true)}}  sx={{color: 'white', borderColor: 'white' }}>Home</Button>
                             <Button onClick={() => console.log("Click")}  sx={{ color: 'white', borderColor: 'white' }}>Login</Button>
                         </ButtonGroup>
                     </Typography>
